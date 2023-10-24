@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background-image:linear-gradient(rgba(183,58,147,0.4),rgba(166,99,179,0.6));
+	perspective: 700px;
+}
+/* ===================start section-header===============================*/
+header{
+	width: 80%;
+	margin: auto;
+	overflow: auto;
+}
+nav{
+	margin: 40px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-items: baseline;
+}
+nav ul li{
+	position: relative;
+	
+}
+nav ul li::after{
+	content: "";
+	width: 0;
+	height: 3px;
+	background-color: red;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+nav ul li:hover::after{
+	width: 100%;
+}
+.logo-iphon{
+	width: 180px;
+	margin-left: -10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+h2{
+	font-size: 32px;
+	text-align: center;
+	
+}
+
+.iphon{
+	font-size: 40px;
+	color: #9932cc;
+	
+}
+.list{
+	
+	margin-bottom: 10px;
+}
+.list li{
+	display: inline;
+	font-size: 17px;
+	color: #123;
+	margin-left: 25px;
+	font-weight: bold;	
+}
+.list li a{
+	text-decoration: none;
+	color: #000;
+}
+
+.img-logo{
+	display: inline;
+	width: 160px;
+	height:120px;
+	margin-left:0;  
+}
+.img-head{
+	width: 100%;
+	height: 100vh;
+	border-radius: 30px;
+}
+.shop{
+	display: inline;
+	width: 20px;
+	height: 20px;
+	
+}
+.zero{
+	display: inline;
+	margin-right: 15px;
+	width: 20px;
+	height: 20px;
+	background-color: #9932cc;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 60%;
+	
+}
+.div-icon{
+	display: inline;
+	margin-left: 20px;
+}
+.div-icon i{
+	font-size: 22px;
+	margin-left: 12px;
+}
+.span1{
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: -10px;
+}
+/* ===================start section-colors===============================*/
+.container{
+	width: 80%;
+	margin: auto;
+}
+.pairent-categroy{
+	display: flex;	
+}
+.title1{
+	margin: 40px 0;
+}
+
+.line1{
+	width: 120px;
+	height: 4px;
+	background-color: rgba(191,51,87,0.5);
+	margin: auto;
+	margin-top: 8px;
+    transition:1s; 
+}
+.title1:hover .line1{
+	transform: scaleX(1.2);
+}
+.item-categroy{
+	background-color:#f3bcf2; 
+	margin: auto;
+	text-align: center;
+	border-radius: 20px;
+}
+
+h3{
+	display: inline;
+}
+.pairent-categroy i{
+	margin-left: 20px;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	color: #fff;
+	visibility: hidden;
+}
+.item-categroy:hover i{
+	visibility: visible;
+	
+}
+.container2{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	margin-top: 40px;
+	justify-content: space-around;
+	align-items: center;
+}
+.div-a{
+	background-color: #eeaeec;
+	height: 300px;
+	border-radius: 20px;
+}
+.discount-item{
+	width: 200px;
+	height: 300px;
+	border-radius: 20px;
+	background-size: contain;
+	background-color: #ffc0cb;
+	background-image: url(../img/11.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+	transition: .5s;
+}
+.discount-item:hover{
+	transform: scale(1.1);
+}
+.lines{
+	display: flex;
+    justify-content: flex-end;
+
+}
+.lines div{
+	width: 40px;
+	height: 2px;
+	background-color: red;
+	margin: 30px 10px;
+
+}
+.ii{
+	font-size: 60px;
+	text-align: center;
+	margin-top: 10px;
+}
+.span2{
+	display: block;
+	margin-left: 60px;
+}
+.div1 h2{
+	display: inline-block;
+	text-align: center;
+}
+.div-a p{
+	padding: 40px 0;
+}
+.discount-item-info{
+	margin-top:  200px;
+}
+/*-----------------------productes-cotianer------------------------------*/
+.productes-cotianer{
+	width: 80%;
+	margin: auto;
+}
+.pro-head{
+	margin-top: 40px;
+}
+.list-pro ul{
+	text-align: center;
+}
+.list-pro ul li{
+	display: inline-block;
+	margin: 20px 10px;	
+}
+.line-sp{
+	width: 60px;
+	height: 3px;
+	background-color: red;
+}
+
+.products-items img{
+	border-radius: 20px;	
+}
+.products-items{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 40px 40px;
+	margin-left: 120px;	
+}
+.product-item{
+	width: 200px;
+	height: 300px;
+	position: relative;
+	transition: 1.5s;
+	transform-style: preserve-3d;
+}
+.product-item:hover{
+	transform: rotateY(180deg);
+}
+.product-img{
+	position:absolute;	
+	z-index: 1;
+	backface-visibility: hidden;
+}
+.product-overlay{
+	position: absolute;
+	transform: rotateY(180deg);	
+}
